@@ -1,11 +1,10 @@
 import React,{Component} from "react";
 import axios from "axios";
+import "./Form.css"
 
 class Form extends Component {
     constructor(props){
         super(props);
-        
-
     }
     
     componentDidMount(){
@@ -29,7 +28,7 @@ class Form extends Component {
         });
         return (<form onSubmit={this.props.onClick}>
             {names}
-            <button >GUESS</button>
+            <button>GUESS</button>
         </form>);
     }
 
